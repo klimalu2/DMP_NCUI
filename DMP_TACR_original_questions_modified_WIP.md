@@ -56,7 +56,7 @@
   - [ ] **NO**
     - Please explain why the data cannot be provided in a machine-readable format:
       **[ Text Box ]**
-- **Will they have a persistent identifier (PID) or digital object identifier (DOI)?**
+- **Will they have a persistent identifier (PID) or digital object identifier (DOI)?** <sub>A persistent identifier is required to guarantee permanent access, prevent broken links over time, and enable direct, trackable citations of the dataset in future research.</sub>
 
   - [ ] **If already available**:  Provide a link to your published repository entry with assigned identifier
   - [ ] **If planned**: State your target repository and the means of acquiring a PID/DOI
@@ -84,7 +84,7 @@
 
   - >**Checklist of metadata items to account for:**
 
-    - **Required Metadata**: Name of the data, full names of creators and contributors, information about the funding provider, programme, and project, publication date, language of the data, length of embargo, persistent (permanent) identifier (e.g. Digital Object Identifier / DOI)
+   - **Required Metadata by TA ČR** (see [TACR_requirements.pdf](https://tacr.gov.cz/wp-content/uploads/documents/2026/06/19/1781873126_Research%20data%20and%20open%20access%20to%20outputs_results.pdf#page=6)): Name of the data, full names of creators and contributors, information about the funding provider, programme, and project, publication date, language of the data, length of embargo, persistent (permanent) identifier (e.g. Digital Object Identifier / DOI)
     - **Recommended Metadata**: License conditions, permanent identifiers of persons, permanent identifiers of organisations, permanent identifiers of funding
     - **Repository Information for Reuse & Validation**: Other research results, tools and instruments needed to reuse or validate research data -> README.md file in most cases
 
@@ -102,6 +102,9 @@
       [ ] GitLab
       [ ] Hugging Face
       [ ] Other: [ Text Box ]
+
+    **Note**: GitHub/GitLab/Hugging Face are "code repositories" in software engineering, they do not not meet the scientific definitions of a trusted digital repository though. They lack permanent preservation guarantees, immutable version snapshots, and native persistent identifiers (DOIs).
+    TODO: reference software heritage, possibly merge with the question referring to persistent identifiers - elegant solution: [Software Heritage Save Action](https://github.com/sdruskat/swh-save-action)
       
 - ~~**How long will the data be available?**~~
 
@@ -175,7 +178,7 @@
 - ~~**Describe how you will store the data during the project implementation and after its completion.**~~
 
   - **during project implementation**: Answered below by 'Where will active working data, raw captures, code, and model checkpoints live during development?'
-  - **after project implementation**: Answered by 'Will you store data in a repository? Which one?'
+  - ~~**after project implementation**~~: Answered by 'Will you store data in a repository? Which one?'
 - ~~**Indicate which type of repository (specialist, institutional, international, etc.) you plan to store the data in, or specify a specific repository.**~~
 
   - Answered by 'Will you store data in a repository? Which one?'
@@ -217,30 +220,35 @@
 
 ---
 
-## 4. Costs & Output Utilization -> question to PMO?
+## 4. Costs & Output Utilization -> question to researchers
 
 > **Main Question:** What will be the costs of data management and ensuring FAIR principles? How will you cover these costs?
 
 >> **4.1 Costs (max. 3000 characters)**
 >>
 
-- **What will be the costs of data management?** TODO?
+- **What will be the costs of data management?** TODO
   - Publishing on GitHub/Zenodo is free of charge.
     Internal repositories storage are paid by internal resources.
-- **How will you cover these costs?** TODO?
+- **How will you cover these costs?** TODO
 
 ---
 
-## 5. Responsible Person TODO -> do they mean all respective subprojects or just a DMP responsible?
+## 5. Responsible Person TODO
 
 > **Main Question:** Will you have a person responsible for data management within your project?
 
 >> **5.1 Responsible Person (max. 3000 characters)**
 >>
+- Do you have someone in your organization who is responsible for data management?
 
-- **Who is responsible for data management?**
-- **Please indicate his/her position/role in the project.**
-- **Will this person be part of the project team?**
+  [ ] **NO**
+
+  [ ] **YES**
+  - **Will this person be part of the project team?**
+
+- ~~**Who is responsible for data management?**~~
+- ~~**Please indicate his/her position/role in the project.**~~
 
 ---
 
