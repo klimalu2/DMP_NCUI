@@ -56,19 +56,33 @@
   - [ ] **NO**
     - Please explain why the data cannot be provided in a machine-readable format:
       **[ Text Box ]**
-- **Will they have a persistent identifier (PID) or digital object identifier (DOI)?** <sub>A persistent identifier is required to guarantee permanent access, prevent broken links over time, and enable direct, trackable citations of the dataset in future research.</sub>
 
-  - [ ] **If already available**:  Provide a link to your published repository entry with assigned identifier
-  - [ ] **If planned**: State your target repository and the means of acquiring a PID/DOI
-  - [ ] **NO** -> explain why: **[ Text Box ]**
+- **Where will your data/software be stored, and how will it be archived to receive a Persistent Identifier (PID, e.g. DOI or SWHID)?**
 
-  * > hint: [Repositories like Zenodo assign a DOI automatically]
-    >
-  * > hint: [If the data is software itself there are 2 ways of obtaining an identifier through the same provider [SoftwareHeritage](https://www.softwareheritage.org/) -> assigns a SWHID (software hash identifier):
-    >
-    > 1. [Zenodo/GitHub integration](https://help.zenodo.org/docs/github/)
-    > 2. [How to archive reference code](https://www.softwareheritage.org/how-to-archive-reference-code/)]
-    >
+  >Note on Preservation: A PID guarantees permanent access, prevents broken links, and enables trackable citations in future research. Code hosting platforms (GitHub, GitLab, Hugging Face) do not meet the scientific definition of a trusted digital repository because they lack permanent preservation guarantees, immutable snapshots, and native PIDs. If you use them, you must specify an archiving action.
+
+  - **Primary Storage / Hosting Platform (Select all that apply):**
+
+    - [ ] Zenodo
+    - [ ] GitHub
+    - [ ] GitLab
+    - [ ] Hugging Face
+    - [ ] Other: [ Text Box ]
+
+
+  - **Archiving & PID Strategy (Select all that apply):**
+
+    - [ ] **Already available:** Provide the link to your archived entry with the assigned PID/DOI/SWHID.
+    [ Text Box ]
+    - [ ] **Planned (Data/General):** The target repository (e.g. Zenodo) will automatically assign a DOI upon publication.
+    - [ ] **Planned (Software Code via Zenodo):** We will use the Zenodo/GitHub integration to automatically archive releases and generate DOIs.
+      > hint: [[Zenodo/GitHub integration](https://help.zenodo.org/docs/github/)]
+    - [ ] **Planned (Software Code via Archive):** We will use the Software Heritage to archive the code repository and acquire a SWHID.
+      > hint: [[How to archive reference code](https://www.softwareheritage.org/how-to-archive-reference-code/) + elegant solution: [Software Heritage Save Action](https://github.com/sdruskat/swh-save-action)]
+    - [ ] **Planned (Other):** State your workflow for acquiring a PID.
+    [ Text Box ]
+    - [ ] **No PID / Archive planned:** Please explain why long-term preservation is not feasible.
+    [ Text Box ]
 - **~~Will you provide metadata in a standard format?~~**
   -> merged into 1 question below
 - **~~Will the metadata also be findable?~~** -> merged into 1 question below
@@ -93,18 +107,8 @@
 
 - ~~**Will the data be accessible to anyone without restrictions? If not, state the reason and describe the limitation in more detail.**~~
   -> covered under Reusability
-- **Will you store data in a repository? Which one?**
-
-  **Select all that apply**:
-
-      [ ] Zenodo
-      [ ] GitHub
-      [ ] GitLab
-      [ ] Hugging Face
-      [ ] Other: [ Text Box ]
-
-    **Note**: GitHub/GitLab/Hugging Face are "code repositories" in software engineering, they do not not meet the scientific definitions of a trusted digital repository though. They lack permanent preservation guarantees, immutable version snapshots, and native persistent identifiers (DOIs).
-    TODO: reference software heritage, possibly merge with the question referring to persistent identifiers - elegant solution: [Software Heritage Save Action](https://github.com/sdruskat/swh-save-action)
+-~~**Will you store data in a repository? Which one?**~~
+ -> answered by '*Where will your data/software be stored, and how will it be archived to receive a Persistent Identifier (PID, e.g. DOI or SWHID)?'
       
 - ~~**How long will the data be available?**~~
 
