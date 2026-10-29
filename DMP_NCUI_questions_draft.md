@@ -1,15 +1,5 @@
 # TA ČR Data Management Plan (DMP) — Questions for research teams
 
-<!-- ## 0. Project Information
-
-- **Project code:** `[ Please enter the project code ]`
-- **Project name:** `[ Please enter the project name ]`
-- **Date:** `[ Please enter the date ]`
-- **Data Management Plan version:** `[ Please fill in the DMP version number ]`
-- **Processor of the Data Management Plan:** `[ Please fill in name and contact details ]`
-
---- -->
-
 ## 1. Data Description
 
 > **Main Question:** What data will you create, process, or collect?
@@ -55,19 +45,33 @@
   - [ ] **NO**
     - Please explain why the data cannot be provided in a machine-readable format:
       **[ Text Box ]**
-- **Will they have a persistent identifier (PID) or digital object identifier (DOI)?** <sub>A persistent identifier is required to guarantee permanent access, prevent broken links over time, and enable direct, trackable citations of the dataset in future research.</sub>
 
-  - [ ] **If already available**:  Provide a link to your published repository entry with assigned identifier
-  - [ ] **If planned**: State your target repository and the means of acquiring a PID/DOI
-  - [ ] **NO** -> explain why: **[ Text Box ]**
+- **Where will your data/software be stored, and how will it be archived to receive a Persistent Identifier (PID, e.g. DOI or SWHID)?**
 
-  * > hint: [Repositories like Zenodo assign a DOI automatically]
-    >
-  * > hint: [If the data is software itself there are 2 ways of obtaining an identifier through the same provider [SoftwareHeritage](https://www.softwareheritage.org/) -> assigns a SWHID (software hash identifier):
-    >
-    > 1. [Zenodo/GitHub integration](https://help.zenodo.org/docs/github/)
-    > 2. [How to archive reference code](https://www.softwareheritage.org/how-to-archive-reference-code/)]
-    >
+  >Note on Preservation: A PID guarantees permanent access, prevents broken links, and enables trackable citations in future research. Code hosting platforms (GitHub, GitLab, Hugging Face) do not meet the scientific definition of a trusted digital repository because they lack permanent preservation guarantees, immutable snapshots, and native PIDs. If you use them, you must specify an archiving action.
+
+  - **Primary Storage / Hosting Platform (Select all that apply):**
+
+    - [ ] Zenodo
+    - [ ] GitHub
+    - [ ] GitLab
+    - [ ] Hugging Face
+    - [ ] Other: [ Text Box ]
+
+
+  - **Archiving & PID Strategy (Select all that apply):**
+
+    - [ ] **Already available:** Provide the link to your archived entry with the assigned PID/DOI/SWHID.
+    [ Text Box ]
+    - [ ] **Planned (Data/General):** The target repository (e.g. Zenodo) will automatically assign a DOI upon publication.
+    - [ ] **Planned (Software Code via Zenodo):** We will use the Zenodo/GitHub integration to automatically archive releases and generate DOIs.
+      > hint: [[Zenodo/GitHub integration](https://help.zenodo.org/docs/github/)]
+    - [ ] **Planned (Software Code via Archive):** We will use the Software Heritage to archive the code repository and acquire a SWHID.
+      > hint: [[How to archive reference code](https://www.softwareheritage.org/how-to-archive-reference-code/) + elegant solution: [Software Heritage Save Action](https://github.com/sdruskat/swh-save-action)]
+    - [ ] **Planned (Other):** State your workflow for acquiring a PID.
+    [ Text Box ]
+    - [ ] **No PID / Archive planned:** Please explain why long-term preservation is not feasible.
+    [ Text Box ]
 - **Where and how is (or will) your research metadata (be) provided in a standard, findable format?**
 
   - > hint: [What is metadata?](https://www.openaire.eu/what-is-metadata?highlight=WyJtZXRhZGF0YSJd)
@@ -84,27 +88,12 @@
     - **Recommended Metadata**: License conditions, permanent identifiers of persons, permanent identifiers of organisations, permanent identifiers of funding
     - **Repository Information for Reuse & Validation**: Other research results, tools and instruments needed to reuse or validate research data -> README.md file in most cases
 
->> **2.2 Accessibility**
->>
-- **Will you store data in a repository? Which one?**
-
-  **Select all that apply**:
-
-      [ ] Zenodo
-      [ ] GitHub
-      [ ] GitLab
-      [ ] Hugging Face
-      [ ] Other: [ Text Box ]
-
-    **Note**: GitHub/GitLab/Hugging Face are "code repositories" in software engineering, they do not not meet the scientific definitions of a trusted digital repository though. They lack permanent preservation guarantees, immutable version snapshots, and native persistent identifiers (DOIs).
-    <!-- TODO: reference software heritage, possibly merge with the question referring to persistent identifiers - elegant solution: [Software Heritage Save Action](https://github.com/sdruskat/swh-save-action) -->
-      
->> **2.3 Interoperability**
+>> **2.3 Interoperability (max. 3000 characters)**
 >>
 
 - **How will you ensure your data and software can be easily opened, exchanged, and integrated with other tools (interoperability)? (Select all that apply)**
 
-  [ ] **Open File Formats**: Non-proprietary, open formats (e.g. .csv, .json, .py, .txt, .pdf).
+  [ ] **Open File Formats**: Non-proprietary, open formats (e.g. .csv, .json, .py, .txt).
 
   [ ] **Proprietary / Software-Specific Formats**: Formats requiring specific commercial software or specialized hardware (e.g. MATLAB .mat, LabVIEW, CAD binaries).
 
@@ -116,7 +105,7 @@
 
   [ ] **Undecided / Assistance Needed**: No specific interoperability standards planned yet (a Data Steward will reach out to offer guidance). -> (**make this an exclusive option that deselects previous options**)
 
->> **2.4 Reusability**
+>> **2.4 Reusability (max. 3000 characters)**
 >>
 
 >> Access, Licensing & Reusability (better heading as it covers all of those)
@@ -153,8 +142,9 @@
 
 > **Main Question:** How will you store the data during the project implementation and keep it after the end of the project? How will the data be secured?
 
->> **3.1 Storage**
+>> **3.1 Storage (max. 3000 characters)**
 >>
+
 - **Where will active working data, raw captures, code, and model checkpoints live during development?** (Select all that apply)
 
   [ ] **Institutional Storage / NAS**: CIIRC ČVUT central servers or lab NAS arrays (automatically backed up).
@@ -171,8 +161,9 @@
 
   [ ] **Industrial Partner Infrastructure**: On-premise servers or hardware provided directly by commercial partners under NDA (Non-Disclosure Agreement).
 
->> **3.2 Security**
+>> **3.2 Security (max. 3000 characters)**
 >>
+
 - **Does your project handle sensitive, personal (GDPR), or NDA-restricted industrial data?**
 
   (NDA: Non-Disclosure Agreement, RBAC: Role-Based Access Control)
@@ -190,45 +181,19 @@
       [ ] Encrypted / Secure Storage: Stored on encrypted drives or non-public secure servers.
 
 ---
-<!-- 
-## 4. Costs & Output Utilization -> TODO to be clarified internally
+
+## 4. Costs & Output Utilization
 
 > **Main Question:** What will be the costs of data management and ensuring FAIR principles? How will you cover these costs?
 
->> **4.1 Costs**
+>> **4.1 Costs (max. 3000 characters)**
 >>
 
-- **What will be the costs of data management?**
-  - Publishing on GitHub/Zenodo is free of charge.
-    Internal repositories storage are paid by internal resources.
-- **How will you cover these costs?** -->
+- **Are there any costs associated with data management in your project**?
+
+    - [ ] **NO**
+    - [ ] **YES**
+        - **How will you cover the costs?** 
+        - **[ Text Box ]**
 
 ---
-
-## 4. Responsible Person
-
-> **Main Question:** Will you have a person responsible for data management within your project?
-
->> **5.1 Responsible Person**
->>
-- Do you have someone in your organization who is responsible for data management?
-
-  [ ] **NO**
-
-  [ ] **YES**
-  - **Please indicate his/her position/role in the project.**
-  
-    [ Text Box ]
-
-<!-- - ~~**Please indicate his/her position/role in the project.**~~ -->
-
----
-
-<!-- ## 6. TODO Results documentation - TA ČR excel sheet - only in Czech...
-
-see [Document](https://www.dropbox.com/scl/fi/mhwra6z0jmp7yq5c9drdz/1752427291_1748344328_Informace-o-otev-en-m-p-stupu-k-v-sledk-m-a-dat-m.xlsx?rlkey=qzty30hog34w58hgad8d6zfvn&dl=0) -->
-
-<!-- ## 6. Conclusion
-
-- **6.1 Additional Information (max. 3000 characters):** Enter any additional information relating to the Data Management Plan.
-- **6.2 Comments / Feedback (max. 3000 characters):** Enter any comments or suggestions on how to improve the form. -->
