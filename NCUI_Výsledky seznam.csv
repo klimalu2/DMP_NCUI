@@ -49,7 +49,7 @@ WP5;Kontextově orientovaná spolupráce člověka a robotu při společných ma
 WP5;Sada algoritmu a SW knihoven pro planovani a optimalizaci v dopravnich scenarich;2028;x
 WP5;Software pro automatickou tvorbu virtuálních 3D prostředí pro testování automobilových systémů ADAS vytvořených z dat flotilových vozidel;2028;Škoda Auto, Digiteq Automotive
 WP5;Software s definovanou funkčností a prokazatelným použitím (model AI, softwarový balík, fúzní rámec, modul edge AI) pro pilotní aplikaci automatizovaného řízení SAE J3016 L3-L4, resp. systémů dálkově řízených dopravních prostředků;2028;VALEO
-WP5;"Software s definovanou funkčností a prokazatelným použitím (model AI, softwarový balík) pro extrakci metadat (např. klasifikace podélných a svislých dopravních značek; klasifikace oblastí se špatnou viditelností; zaměření na různé přístupy a metody extrakce metadat)";2028;VALEO
+WP5;Software s definovanou funkčností a prokazatelným použitím (model AI, softwarový balík) pro extrakci metadat (např. klasifikace podélných a svislých dopravních značek; klasifikace oblastí se špatnou viditelností; zaměření na různé přístupy a metody extrakce metadat);2028;VALEO
 WP5;AnomEdge: škálovatelné rozpoznávání incidentů s použitím edge computingu;2028;Yunex
 WP5;Softwarové AI moduly pro automatizaci označování dat;2028;VALEO
 WP6;Ověřený funkční prototyp softwarové platformy propojující kognitivní testování a digitální dvojče.;2028;EUDAMO
