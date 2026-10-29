@@ -57,6 +57,7 @@
     - [ ] GitLab
     - [ ] Hugging Face
     - [ ] Other: [ Text Box ]
+    - [ ] No repository planned / not yet decided 
 
 
   - **Archiving & PID Strategy (Select all that apply):**
@@ -78,6 +79,7 @@
     >
 
   - [ ] **If already available**: Provide a link to your published repository entry (e.g. Zenodo) or GitHub repo containing a <em>CITATION.cff</em> or <em>.zenodo.json</em> file.
+        [ Text Box ]
   - [ ] **If planned**: State your target repository (e.g. Zenodo) or write: "Data/code will be deposited in a FAIR repository like Zenodo using DataCite metadata."
 
   - **Guide for GitHub users**: Zenodo Guide: [Making a GitHub Repository Citable](https://zenodo.org/records/22101577)
@@ -130,7 +132,7 @@
 
   [ ] **Restricted / Controlled Access**: Available only upon request or under bilateral agreement (e.g. NDA) due to specific constraints.
 
-  >Reason for restriction: [ ] Industrial Partner IP / Trade Secret  [ ] Patent Pending  [ ] GDPR / Sensitive Data
+  >Reason for restriction: [ ] Industrial Partner IP / Trade Secret  [ ] Patent Pending  [ ] GDPR / Sensitive Data [ ] Other (please specify): [ Text Box ]
 
   >How to request access: [ Text Box - e.g. contact PI / project management office under formal DPA/NDA ]
 
