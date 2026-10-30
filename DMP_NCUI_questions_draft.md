@@ -33,7 +33,7 @@
 
 > **Main Question:** What methods and principles of their management will you use with regard to FAIR principles?
 
->> **2.1 Findability (max. 3000 characters)**
+>> **2.1 Findability**
 >>
 
 - **Will the data be in a machine-readable format?**
@@ -86,11 +86,22 @@
 
   - >**Checklist of metadata items to account for:**
 
-   - **Required Metadata by TA ČR** (see [TACR_requirements.pdf](https://tacr.gov.cz/wp-content/uploads/documents/2026/06/19/1781873126_Research%20data%20and%20open%20access%20to%20outputs_results.pdf#page=6)): Name of the data, full names of creators and contributors, information about the funding provider, programme, and project, publication date, language of the data, length of embargo, persistent (permanent) identifier (e.g. Digital Object Identifier / DOI)
-    - **Recommended Metadata**: License conditions, permanent identifiers of persons, permanent identifiers of organisations, permanent identifiers of funding
+   - **Required Metadata by TA ČR** (see [TACR_requirements.pdf](https://tacr.gov.cz/wp-content/uploads/documents/2026/06/19/1781873126_Research%20data%20and%20open%20access%20to%20outputs_results.pdf#page=6)): 
+      - name of the data
+      - full names of creators and contributors
+      - information about the funding provider (see [1. Běžné programy TA ČR](https://tacr.gov.cz/povinna-publicita-projektu-podporenych-technologickou-agenturou-cr/))
+      - programme (i.e. **"Program SIGMA – DC5"**)
+      - project title or code
+      - publication date
+      - language of the data
+      - access rights & embargo period (if applicable)
+      - persistent (permanent) identifier (e.g. Digital Object Identifier / DOI)
+      - license / terms of use (essential for FAIR data reusability)
+
+    - **Recommended Metadata**: permanent identifiers of persons, permanent identifiers of organisations, permanent identifiers of funding
     - **Repository Information for Reuse & Validation**: Other research results, tools and instruments needed to reuse or validate research data -> README.md file in most cases
 
->> **2.3 Interoperability (max. 3000 characters)**
+>> **2.3 Interoperability**
 >>
 
 - **How will you ensure your data and software can be easily opened, exchanged, and integrated with other tools (interoperability)? (Select all that apply)**
@@ -107,7 +118,7 @@
 
   [ ] **Undecided / Assistance Needed**: No specific interoperability standards planned yet (a Data Steward will reach out to offer guidance). -> (**make this an exclusive option that deselects previous options**)
 
->> **2.4 Reusability (max. 3000 characters)**
+>> **2.4 Reusability**
 >>
 
 >> Access, Licensing & Reusability (better heading as it covers all of those)
@@ -144,7 +155,7 @@
 
 > **Main Question:** How will you store the data during the project implementation and keep it after the end of the project? How will the data be secured?
 
->> **3.1 Storage (max. 3000 characters)**
+>> **3.1 Storage**
 >>
 
 - **Where will active working data, raw captures, code, and model checkpoints live during development?** (Select all that apply)
@@ -163,7 +174,7 @@
 
   [ ] **Industrial Partner Infrastructure**: On-premise servers or hardware provided directly by commercial partners under NDA (Non-Disclosure Agreement).
 
->> **3.2 Security (max. 3000 characters)**
+>> **3.2 Security**
 >>
 
 - **Does your project handle sensitive, personal (GDPR), or NDA-restricted industrial data?**
@@ -188,7 +199,7 @@
 
 > **Main Question:** What will be the costs of data management and ensuring FAIR principles? How will you cover these costs?
 
->> **4.1 Costs (max. 3000 characters)**
+>> **4.1 Costs**
 >>
 
 - **Are there any costs associated with data management in your project**?
