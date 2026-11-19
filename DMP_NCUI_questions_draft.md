@@ -46,9 +46,13 @@
     - Please explain why the data cannot be provided in a machine-readable format:
       **[ Text Box ]**
 
-- **Where will your data/software be stored, and how will it be archived to receive a Persistent Identifier (PID, e.g. DOI or SWHID)?**
+- **Where will your data/software be stored, and how will it be archived to receive a persistent identifier?**
+   - **PID** - Persistent Identifier
+   - common types of PID:   
+      - **DOI**:  Digital Object Identifier - <em>used primarily for datasets, papers, and software releases (e.g., via Zenodo or Figshare)</em>
+      - **SWHID**: Software Heritage Identifier - <em>used specifically for archiving and referencing exact versions of source code within the Software Heritage archive</em>
 
-  >Note on Preservation: A PID guarantees permanent access, prevents broken links, and enables trackable citations in future research. Code hosting platforms (GitHub, GitLab, Hugging Face) do not meet the scientific definition of a trusted digital repository because they lack permanent preservation guarantees, immutable snapshots, and native PIDs. If you use them, you must specify an archiving action.
+  >Note on preservation: A PID guarantees permanent access, prevents broken links, and enables trackable citations in future research. Code hosting platforms (GitHub, GitLab, Hugging Face) do not meet the scientific definition of a trusted digital repository because they lack permanent preservation guarantees, immutable snapshots, and native PIDs. If you use them, you must specify an archiving action.
 
   - **Primary Storage / Hosting Platform (Select all that apply):**
 
